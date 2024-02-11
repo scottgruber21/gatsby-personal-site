@@ -20,13 +20,6 @@ const Header = ({ path }) => {
       }
     });
 
-    const SuperContainer = styled.div`
-  padding: ${window.location.href.includes("about")
-    ? " 0px 56px 0px 40px"
-    : "0px 40px 0px 40px"};
-    display: block;
-`
-
   }, []);
 
   return (
@@ -58,6 +51,17 @@ const Header = ({ path }) => {
   );
 };
 
+// const SuperContainer = styled.div`
+// padding: ${window.location.href.includes("about")
+//   ? " 0px 56px 0px 40px"
+//   : "0px 40px 0px 40px"};
+//   display: block;
+// `
+
+const SuperContainer = styled.div`
+padding: "0px 40px 0px 40px";
+  display: block;
+`
 
 
 const HeaderContainer = styled.nav`
