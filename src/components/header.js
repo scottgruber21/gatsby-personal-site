@@ -28,9 +28,7 @@ const Header = ({ path }) => {
       <HeaderContainer>
         <TitleContainer>
           <SiteTitle>
-            {!window.location.href.includes("ddd") && (
               <TitleLink to="/">Scott Gruber</TitleLink>
-            )}
           </SiteTitle>
         </TitleContainer>
         <LinksContainer>
