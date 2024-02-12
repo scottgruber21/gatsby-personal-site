@@ -20,6 +20,7 @@ const IndexPage = () => {
   return (
     <Layout>
    <H1>{headerName.map(x => <span>{x}</span>)}</H1>
+   <H1>THIS IS A TEST</H1>
    <H2><span>Web Development | Digital Marketing</span></H2>
    </Layout>
   )

@@ -15,10 +15,12 @@ const ProjectCard = ({info}) => {
         if(open){
             document.querySelector('body').style.overflow='hidden'
             document.querySelector('body').style.marginRight='16px'
+            document.querySelector('body').style.height='100%'
         }
         else{
             document.querySelector('body').style.overflow='initial'
             document.querySelector('body').style.marginRight='0px'
+            document.querySelector('body').style.height='auto'
         }
     }, [open])
 
