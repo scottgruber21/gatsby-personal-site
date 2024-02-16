@@ -5,11 +5,11 @@ import Footer from './footer'
 import styled from 'styled-components'
 import { createGlobalStyle } from "styled-components"
 
-const Layout = ({children}) => {
+const Layout = ({children, nameRemove}) => {
   return (
     <>
     <GlobalStyle />
-      <Header />
+      <Header nameRemove={nameRemove} />
       <Content>
         {children}
       </Content>
@@ -26,6 +26,7 @@ body{
   box-sizing: border-box;
   background: darkgray no-repeat url('/nyc-dark.jpg/') fixed center;
   background-position: center 30%;
+  color: white;
 }
 `
 

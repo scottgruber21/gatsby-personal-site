@@ -7,11 +7,12 @@ import { navLinks } from "../../pageData/pageData";
 import MobileMenu from "./mobileMenu";
 import { IoClose } from "react-icons/io5";
 
-const Header = ({ path }) => {
+const Header = ({ path, nameRemove }) => {
   const linkList = useRef(null);
   const menu = useRef(null);
 
   const [mobileMenu, setMobileMenu] = useState(false);
+  // const [changePadding, setChangePadding] = useState()
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -19,6 +20,8 @@ const Header = ({ path }) => {
         setMobileMenu(false)
       }
     });
+
+    // setChangePadding(window.location.href.includes("about"))
 
   }, []);
 
@@ -28,7 +31,7 @@ const Header = ({ path }) => {
       <HeaderContainer>
         <TitleContainer>
           <SiteTitle>
-              <TitleLink to="/">Scott Gruber</TitleLink>
+              <TitleLink style={{display: nameRemove ? 'none' : 'block'}} to="/">Scott Gruber</TitleLink>
           </SiteTitle>
         </TitleContainer>
         <LinksContainer>
@@ -50,14 +53,14 @@ const Header = ({ path }) => {
 };
 
 // const SuperContainer = styled.div`
-// padding: ${window.location.href.includes("about")
+// padding: ${changePadding 
 //   ? " 0px 56px 0px 40px"
 //   : "0px 40px 0px 40px"};
 //   display: block;
 // `
 
 const SuperContainer = styled.div`
-padding: "0px 40px 0px 40px";
+padding: 0px 40px 0px 40px;
   display: block;
 `
 

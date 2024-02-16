@@ -24,14 +24,14 @@ const ProjectModal = ({open, setOpen, info, fadeOut, fade}) => {
     <ModalBody fade={fade} onClick={e => e.stopPropagation()}>
         <ModalHeader>
             <ModalTitle>{title}</ModalTitle>
-            <CloseButton onClick={() => setOpen(false)} />
+            <CloseButton onClick={fadeOut}/>
         </ModalHeader>
         <GatsbyImage image={mainImg} />
         <Description>{description}</Description>
         <BtnLink href={link} target="_blank">View
             in CodePen</BtnLink>
         <ModalFooter>
-            <Btn onClick={() => setOpen(false)}>Close</Btn>
+            <Btn onClick={fadeOut}>Close</Btn>
         </ModalFooter>
     </ModalBody>
 </ModalContainer>
@@ -84,6 +84,7 @@ const ModalContainer = styled.div`
             //padding: 0 20px 20px 20px;
             /* display: none; */
             /* animation: ${fadeIn} 0.3s linear */
+            /* padding-bottom: 20px; */
             animation: ${props => props.fade ? css`${fadeOff} 0.4s linear` : css`${fadeIn} 0.3s linear`};
             overflow-y: scroll
 `
@@ -92,11 +93,12 @@ const ModalBody = styled.div`
             background: white;
             max-width: 600px;
             //width: 100%;
-            width: 80%;
+            width: 85%;
             margin: auto;
             padding: 10px 20px 20px 20px;
             border-radius: 5px;
             margin-top: 20px;
+            margin-bottom: 20px;
             //animation: ${fadeUp} 0.3s linear
             animation: ${props => props.fade ? css`${fadeDown} 0.4s linear` : css`${fadeUp} 0.3s linear`};
 `

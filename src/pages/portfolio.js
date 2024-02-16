@@ -2,12 +2,14 @@ import * as React from 'react'
 import styled from 'styled-components'
 import SampleCards from '../components/sampleCards'
 import Layout from '../components/layout'
+import MainButton from "../components/main-button"
 
 
 const Portfolio = () => {
 
   return <Layout>
       <SampleCards />
+      <MainButton copy="Resume" url="/resume" delay='2.2s' />
   </Layout>
   
 }

@@ -1,0 +1,102 @@
+export const topBullets = [
+  "Front-End Development",
+  "Data Visualization",
+  "Google Analytics",
+  "JavaScript",
+  "Responsive Web Design",
+  "Back-End APIs",
+];
+
+export const workExperience = [
+  {
+    company: "Revenue Cycle Coding Strategies",
+    title: "Web Development and Marketing Systems Manager",
+    location: "Remote",
+    dates: "February 2022 - February 2024",
+    para: "Oversaw website design and content, analytics, reporting, and SEO for a leading healthcare consulting and publishing company. Interfaced with content creators and executives to ensure all digital assets were updated regularly and conform to brand guidelines. Created and deployed campaign landing pages and e-mail communications as needed.",
+    bullets: [
+      "Directed redesign of all three of RCCS’s main brand websites. In conjunction with a designer, redesigned all websites to update the look and feel as well as streamline navigation. Performed all work in Wordpress and Elementor with custom HTML and JavaScript components.",
+      "Developed new landing pages and microsites for events and other campaigns, focused on conversion and usability.",
+      "Utilizing Zapier and custom JavaScript, connected website forms to Microsoft Dynamics CRM, enabling more efficient online lead capture.",
+    ],
+  },
+  {
+    company: "LIXIL Water Technology Americas",
+    title: "Senior Digital Marketing / E-commerce Specialist",
+    location: "Piscataway, NJ",
+    dates: "June 2017 - February 2022",
+    para: "Manage website content, reporting, and email distribution for GROHE, a LWTA subsidiary and leading manufacturer of faucets, showers, and other sanitary fittings. Responsible for content for five GROHE websites throughout the Americas region, including landing page creation and new product launches. Develop and deliver emails including monthly newsletters and e-commerce communications.",
+    bullets: [
+      "Made improvements to key on-page SEO elements that resulted in a 67% increase in search engine traffic for the GROHE website in a six-month period.",
+      "Successfully brought GROHE email functions in-house that were previously handled by German digital team. Transitioned email delivery system to MailChimp and developed templates and mailing lists for communications to customers and partners.",
+      "Developed dashboards in Google Data Studio to report on sales, website traffic, and other KPIs.",
+      "Developed tools in Python and JavaScript to automate labor-intensive tasks and add functionality to websites. These tools saved weeks’ worth of work hours and thousands of dollars in consultant fees. Recognized by the company with an achievement award.",
+    ],
+  },
+  {
+    company: "Star Gas Partners",
+    title: "Digital Marketing Specialist",
+    location: "South Plainfield, NJ",
+    dates: "December 2014 - June 2017",
+    para: "Managed all online assets, including websites, intranet, and social media for a leading East Coast provider of heating oil and home services. Maintained more than 15 websites for various brands including Petro, Meenan, Leffler Energy, and Atlas Glen-mor. Developed and distributed SEO reports through Google Analytics. Managed intranet content and design and trained department administrators on custom CMS.",
+    bullets: [
+      "Developed, tested and deployed responsive SEM landing page designs for multiple brands. Optimizations increased conversion rate by 50% or more.",
+      "Successfully executed the transition of six websites from a custom CMS to Sitefinity. Work included link testing, content review, and redesign of selected pages.",
+      "Successfully transitioned email and marketing automation system from Aurea to Emma.",
+    ],
+  },
+  {
+    company: "Iconectiv (a division of Ericsson)",
+    title: "Marketing Coordinator",
+    location: "Piscataway, NJ",
+    dates: "April 2014 - December 2014",
+    para: "Managed content, graphic design, and website for the interconnection division of a multinational telecommunications corporation. Designed and format marketing materials including presentations and brochures. Maintained content for website and SharePoint intranet site.",
+    bullets: [],
+  },
+  {
+    company: "Axis Group",
+    title: "Business Development Associate",
+    location: "Berkeley Heights, NJ",
+    dates: "April 2013 - April 2014",
+    para: "Coordinated all marketing and business development activities for leading Business Intelligence consulting firm. Wrote and designed marketing materials including brochures, e-mails, website, social media and cold-calling scripts. Followed up on inbound sales requests and managed prospect database. Managed logistics for business development events including webinars and seminars. Managed content and design of Joomla-based website.",
+    bullets: [],
+  },
+];
+
+export const certs = [
+  "Google Analytics Individual Qualification",
+  "Google Ads Certification – Search",
+  "freeCodeCamp Responsive Web Design Certification",
+  "freeCodeCamp JavaScript Algorithms and Data Structures Certification",
+  "freeCodeCamp Front End Libraries Certification",
+  "freeCodeCamp Data Visualization Certification",
+  "freeCodeCamp APIs and Microservices Certification",
+  "freeCodeCamp Data Visualization Certification",
+];
+
+export const techSkills = [
+  "Google Analytics",
+  "Google Data Studio",
+  "Google Tag Manager",
+  "MailChimp",
+  "Optimizely",
+  "Adobe InDesign",
+  "Adobe Photoshop",
+  "Adobe Illustrator",
+  "WordPress",
+  "Joomla! CMS",
+  "Sitefinity",
+]
+
+export const languages = [
+  "HTML/CSS",
+  "JavaScript",
+  "React",
+  "Python",
+  "Node.js",
+  "MongoDB",
+  "SQL",
+  "jQuery",
+  "Bootstrap",
+  "D3",
+]
