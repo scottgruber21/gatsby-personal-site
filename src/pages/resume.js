@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Resume = () => {
   return <Layout>
-    <DownloadLink style={{textDecoration: 'none'}} href='../Scott-Gruber-Resume.pdf/'>
+    <DownloadLink style={{textDecoration: 'none'}} href='../Scott-Gruber-Resume.pdf/' download>
       <Download>
         <div>
           <FaDownload style={{color: 'white', fontSize: '1.5rem'}} />
