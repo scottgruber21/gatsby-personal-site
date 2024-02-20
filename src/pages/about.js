@@ -40,6 +40,9 @@ to{
 const Container = styled.div`
 max-width: 600px;
 margin: auto;
+padding: 20px;
+background-color: rgba(0,0,0,0.4);
+border-radius: 20px;
 `
 
 const HeaderText = styled.h1`

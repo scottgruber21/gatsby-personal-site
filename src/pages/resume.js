@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, {keyframes, css} from 'styled-components'
 import Layout from '../components/layout'
 import { headerFont, textFont } from '../../styleVars/styles'
 import { topBullets, workExperience, certs, techSkills, languages } from '../../resumeData/resumeData,js'
@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Resume = () => {
   return <Layout>
-    <DownloadLink style={{textDecoration: 'none'}} href='../Scott-Gruber-Resume.pdf/' download>
+    <DownloadLink style={{textDecoration: 'none'}} href='../Scott-Gruber-Resume.pdf/'>
       <Download>
         <div>
           <FaDownload style={{color: 'white', fontSize: '1.5rem'}} />
@@ -19,6 +19,7 @@ const Resume = () => {
       </Download> 
     </DownloadLink>
     <Container>
+    <ContainerText>
   <Header style={{fontSize: '3.2rem'}}>Scott Gruber</Header>
   <Subhead style={{textAlign: 'center'}}>Web Development/Digital Marketing Professional</Subhead>
   <Header style={{marginTop: '60px'}}>Certified in:</Header>
@@ -56,9 +57,26 @@ const Resume = () => {
       <Header style={{marginTop: '60px'}}>Education</Header>
       <Para style={{textAlign: 'center'}}><strong>B.A., Journalism/Political Science</strong></Para>
       <Para style={{textAlign: 'center'}}>Rutgers University, New Brunswick, NJ</Para>
+      </ContainerText>
   </Container>
   </Layout>
 }
+
+const FadeIn = keyframes`
+from{
+  opacity: 0;
+}
+
+to{
+  opacity: 1
+}
+`
+
+const ContainerText = styled.div`
+  animation: ${FadeIn} 0.5s linear forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+`
 
 const DownloadLink = styled.a`
 
@@ -97,6 +115,9 @@ text-align: center;
 `
 
 const Container = styled.div`
+padding: 20px;
+background-color: rgba(0,0,0,0.4);
+border-radius: 20px;
 `
 
 const Experience = styled.section`
