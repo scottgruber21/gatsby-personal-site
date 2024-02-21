@@ -42,13 +42,13 @@ const workCards = data.allMdx.nodes.filter(x => x.frontmatter.type === 'work').s
       <CardHeader delay=".3s">Work Samples</CardHeader>
   <CardGrid delay=".6s">
     {workCards.map(x => {
-      return <ProjectCard info={x}/>
+      return <ProjectCard key={x.order} info={x}/>
     })}
     </CardGrid>
   <CardHeader delay=".9s">Personal Projects</CardHeader>
   <CardGrid delay="1.2s">
     {projectCards.map(x => {
-      return <ProjectCard info={x}/>
+      return <ProjectCard key={x.order} info={x}/>
     })}
     </CardGrid>
 

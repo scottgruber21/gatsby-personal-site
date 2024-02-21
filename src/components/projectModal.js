@@ -83,7 +83,8 @@ const ModalContainer = styled.div`
             /* animation: ${fadeIn} 0.3s linear */
             /* padding-bottom: 20px; */
             animation: ${props => props.fade ? css`${fadeOff} 0.4s linear` : css`${fadeIn} 0.3s linear`};
-            overflow-y: scroll
+            overflow-y: scroll;
+            color: black;
 `
 
 const ModalBody = styled.div`

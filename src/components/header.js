@@ -7,9 +7,8 @@ import { navLinks } from "../../pageData/pageData";
 import MobileMenu from "./mobileMenu";
 import { IoClose } from "react-icons/io5";
 
-const Header = ({ path, nameRemove }) => {
+const Header = ({nameRemove }) => {
   const linkList = useRef(null);
-  const menu = useRef(null);
 
   const [mobileMenu, setMobileMenu] = useState(false);
   // const [changePadding, setChangePadding] = useState()
@@ -36,7 +35,7 @@ const Header = ({ path, nameRemove }) => {
         </TitleContainer>
         <LinksContainer>
           <LinksList ref={linkList}>
-            {navLinks.map(x => <TopLink>
+            {navLinks.map((x, i) => <TopLink key={i}>
               <NavLink to={x.link}>{x.title}</NavLink>
             </TopLink>)}
           </LinksList>

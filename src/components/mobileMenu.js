@@ -7,8 +7,8 @@ import { headerFont } from "../../styleVars/styles";
 const MobileMenu = ({mobileMenu}) => {
   return  (<MobileContainer mobileMenu={mobileMenu}>
         <LinkContainer>
-            {navLinks.map(x => {
-               return <NavLink to={x.link}>
+            {navLinks.map((x, i) => {
+               return <NavLink key={i} to={x.link}>
                 <NavItem>
                     <NavLink to={x.link}>{x.title}</NavLink>
                 </NavItem>
