@@ -19,13 +19,20 @@ const IndexPage = () => {
   }, [])
 
   return (
-    <Layout nameRemove={true}>
+    <Layout nameRemove={true} hide={true}>
    <H1>{headerName.map(x => <span>{x}</span>)}</H1>
    <H2><Subhead delay="1.7s">Web Development |</Subhead><Subhead delay="2.2s"> Digital Marketing</Subhead></H2>
    <MainButton copy="About Me" url="/about" delay='2.5s' />
    </Layout>
   )
 }
+
+export const Head = () => (
+  <>
+    <title>Scott Gruber | Web Development & Digital Marketing</title>
+    <meta name="description" content="Your description" />
+  </>
+)
 
 const appear = keyframes`
 from{
@@ -60,4 +67,3 @@ opacity: 0;
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>

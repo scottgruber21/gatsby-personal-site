@@ -1,18 +1,23 @@
 import React from "react"
-
 import styled from "styled-components"
 
-const Footer = () => {
+
+const Footer = ({hide}) => {
   return (
-    <FooterDiv>
-      Footer goes here
+    <FooterDiv hide={hide}>
+      <i>© {new Date().getFullYear()} Scott Gruber</i>
     </FooterDiv>
   )
 }
 
 const FooterDiv = styled.div`
-  width: 100%;
-  font-size: 12px;
+margin-top: 80px;
+border-top: 1px solid white;
+  font-size: 1.1rem;
+  padding: 20px;
+  height: 100px;
+  text-align: right;
+  display: ${props => props.hide ? 'none': 'block'}
 `
 
 export default Footer

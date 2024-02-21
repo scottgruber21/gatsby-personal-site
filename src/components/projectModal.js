@@ -1,21 +1,18 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef} from 'react'
 import styled, {keyframes, css} from 'styled-components'
 import { headerFont, textFont } from '../../styleVars/styles'
 import { FaTimes } from "react-icons/fa";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-const ProjectModal = ({open, setOpen, info, fadeOut, fade}) => {
+const ProjectModal = ({info, fadeOut, fade}) => {
 
     const containerRef = useRef(false)
-    const bodyRef = useRef(false)
 
-    const { buttonText,
+    const { 
         description,
         link,
-        order,
-        subhead,
         title,
-        type} = info.frontmatter
+        } = info.frontmatter
 
     const mainImg = getImage(info.frontmatter.mainImg)
 

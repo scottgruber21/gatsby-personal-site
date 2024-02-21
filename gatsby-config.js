@@ -30,6 +30,10 @@ module.exports = {
           name: `Montserrat`,
           file: `https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap`,
         },
+        {
+          name: `Open Sans`,
+          file: `https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap`,
+        },
       ],
     },
   },

@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { headerFont, textFont } from '../../styleVars/styles'
@@ -34,13 +34,10 @@ const ProjectCard = ({info}) => {
 
     const thumbImg = getImage(info.frontmatter.thumbImg)
 
-    const { buttonText,
-        description,
-        link,
-        order,
+    const { 
         subhead,
         title,
-        type} = info.frontmatter
+        } = info.frontmatter
 
         return <>
         <CardContainer onClick={() => setOpen(true)}>

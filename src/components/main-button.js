@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link as GatsbyLink } from 'gatsby'
 import styled, {keyframes, css} from 'styled-components'
-import { headerFont, textFont } from '../../styleVars/styles'
+import { headerFont } from '../../styleVars/styles'
 
 const MainButton = ({copy, url, delay}) => {
  return <LinkContainer>

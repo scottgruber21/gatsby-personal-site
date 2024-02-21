@@ -5,7 +5,7 @@ import Footer from './footer'
 import styled from 'styled-components'
 import { createGlobalStyle } from "styled-components"
 
-const Layout = ({children, nameRemove}) => {
+const Layout = ({children, nameRemove, hide}) => {
   return (
     <>
     <GlobalStyle />
@@ -13,7 +13,7 @@ const Layout = ({children, nameRemove}) => {
       <Content>
         {children}
       </Content>
-      <Footer />
+      <Footer hide={hide} />
       <div id="modal-portal"></div>
     </>
   )

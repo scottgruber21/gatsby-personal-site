@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
-import styled, {keyframes, css} from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import Layout from '../components/layout'
 import { headerFont, textFont } from '../../styleVars/styles'
 import { topBullets, workExperience, certs, techSkills, languages } from '../../resumeData/resumeData,js'
 import { FaDownload } from "react-icons/fa";
+import MainButton from '../components/main-button'
 
 const Resume = () => {
   return <Layout>
@@ -59,8 +59,16 @@ const Resume = () => {
       <Para style={{textAlign: 'center'}}>Rutgers University, New Brunswick, NJ</Para>
       </ContainerText>
   </Container>
+  <MainButton copy="Contact Me" url="/contact" delay='1.5s' />
   </Layout>
 }
+
+export const Head = () => (
+  <>
+    <title>Scott Gruber | Resume</title>
+    <meta name="description" content="Your description" />
+  </>
+)
 
 const FadeIn = keyframes`
 from{

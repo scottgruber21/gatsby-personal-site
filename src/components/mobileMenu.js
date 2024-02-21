@@ -2,7 +2,7 @@ import React from 'react'
 import { navLinks } from '../../pageData/pageData'
 import { Link as GatLink } from 'gatsby'
 import styled from 'styled-components'
-import { headerFont, textFont } from "../../styleVars/styles";
+import { headerFont } from "../../styleVars/styles";
 
 const MobileMenu = ({mobileMenu}) => {
   return  (<MobileContainer mobileMenu={mobileMenu}>

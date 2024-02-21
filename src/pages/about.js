@@ -27,6 +27,13 @@ const About = () => {
 
 }
 
+export const Head = () => (
+  <>
+    <title>Scott Gruber | About Me</title>
+    <meta name="description" content="Your description" />
+  </>
+)
+
 const fadeIn = keyframes`
 from{
   opacity: 0;

@@ -80,6 +80,8 @@ const TitleContainer = styled.div`
 const TitleLink = styled(GatsbyLink)`
   color: white;
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 `;
 
 const LinksContainer = styled.div`

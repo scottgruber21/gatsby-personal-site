@@ -14,6 +14,13 @@ const Portfolio = () => {
   
 }
 
+export const Head = () => (
+  <>
+    <title>Scott Gruber | Portfolio</title>
+    <meta name="description" content="Your description" />
+  </>
+)
+
 const Header = styled.h1`
 font-size: 1.6rem;
 `
