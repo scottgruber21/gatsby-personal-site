@@ -4,19 +4,36 @@ import { Link as GatLink } from 'gatsby'
 import styled from 'styled-components'
 import { headerFont } from "../../styleVars/styles";
 
+// const MobileMenu = ({mobileMenu}) => {
+//   return  (<MobileContainer mobileMenu={mobileMenu}>
+//         <LinkContainer>
+//             {navLinks.map((x, i) => {
+//                return <NavLink key={i} to={x.link}>
+//                 <NavItem>
+//                     <NavLink to={x.link}>{x.title}</NavLink>
+//                 </NavItem>
+//                 </NavLink>
+//             })}
+//         </LinkContainer>
+//     </MobileContainer>)
+// }
+
 const MobileMenu = ({mobileMenu}) => {
-  return  (<MobileContainer mobileMenu={mobileMenu}>
-        <LinkContainer>
-            {navLinks.map((x, i) => {
-               return <NavLink key={i} to={x.link}>
-                <NavItem>
-                    <NavLink to={x.link}>{x.title}</NavLink>
-                </NavItem>
-                </NavLink>
-            })}
-        </LinkContainer>
-    </MobileContainer>)
-}
+    return  (<MobileContainer $mMenu={mobileMenu}>
+          <LinkContainer>
+              {navLinks.map((x, i) => {
+                 return <NavLink key={i} to={x.link}>
+                  <NavItem>
+                      <NavSpan>{x.title}</NavSpan>
+                  </NavItem>
+                  </NavLink>
+              })}
+          </LinkContainer>
+      </MobileContainer>)
+  }
+
+  const NavSpan = styled.span`
+  `
 
 const MobileContainer = styled.div`
     position: absolute;
@@ -24,7 +41,7 @@ const MobileContainer = styled.div`
     left: 0px;
     width: 100%;
     overflow: hidden;
-    height: ${props => (props.mobileMenu ? '270px' : '0px')};
+    height: ${props => (props.$mMenu ? '270px' : '0px')};
     transition: 0.3s;
     z-index: 9999;
 `

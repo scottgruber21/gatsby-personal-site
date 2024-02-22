@@ -5,7 +5,7 @@ import { headerFont } from '../../styleVars/styles'
 
 const MainButton = ({copy, url, delay}) => {
  return <LinkContainer>
- <MainLink delay={delay} to={url}>{copy} »</MainLink>
+ <MainLink $delay={delay} to={url}>{copy} »</MainLink>
  </LinkContainer>
 }
 
@@ -32,7 +32,7 @@ const MainLink = styled(GatsbyLink)`
     font-weight: 600;
     transition: .3s;
     opacity: 0;
-    animation: ${props => css`${appear} 0.5s linear ${props.delay} forwards`};
+    animation: ${props => css`${appear} 0.5s linear ${props.$delay} forwards`};
 
   &:hover {
     color: black;

@@ -39,16 +39,16 @@ const projectCards = data.allMdx.nodes.filter(x => x.frontmatter.type === 'proje
 const workCards = data.allMdx.nodes.filter(x => x.frontmatter.type === 'work').sort((a, b) => +a.frontmatter.order - +b.frontmatter.order)
 
   return <>
-      <CardHeader delay=".3s">Work Samples</CardHeader>
-  <CardGrid delay=".6s">
-    {workCards.map(x => {
-      return <ProjectCard key={x.order} info={x}/>
+      <CardHeader $delay=".3s">Work Samples</CardHeader>
+  <CardGrid $delay=".6s">
+    {workCards.map((x, i) => {
+      return <ProjectCard key={i} info={x}/>
     })}
     </CardGrid>
-  <CardHeader delay=".9s">Personal Projects</CardHeader>
-  <CardGrid delay="1.2s">
-    {projectCards.map(x => {
-      return <ProjectCard key={x.order} info={x}/>
+  <CardHeader $delay=".9s">Personal Projects</CardHeader>
+  <CardGrid $delay="1.2s">
+    {projectCards.map((x, i) => {
+      return <ProjectCard key={i} info={x}/>
     })}
     </CardGrid>
 
@@ -86,7 +86,7 @@ text-align: center;
 opacity: 0;
 font-family: ${headerFont}, sans-serif;
 animation: ${css`${fadeIn} 0.5s linear forwards`};
-animation-delay: ${props => props.delay};
+animation-delay: ${props => props.$delay};
 `
 
 const CardGrid = styled.div`
@@ -94,7 +94,7 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 10px;
 animation: ${css`${fadeUp} 0.5s linear forwards`};
-animation-delay: ${props => props.delay};
+animation-delay: ${props => props.$delay};
 opacity: 0;
 //transform: translateY(40px);
 @media screen and (max-width: 992px){

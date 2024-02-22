@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 const Footer = ({hide}) => {
   return (
-    <FooterDiv hide={hide}>
+    <FooterDiv $hide={hide}>
       <i>© {new Date().getFullYear()} Scott Gruber</i>
     </FooterDiv>
   )
@@ -17,7 +17,7 @@ border-top: 1px solid white;
   padding: 20px;
   height: 100px;
   text-align: right;
-  display: ${props => props.hide ? 'none': 'block'}
+  display: ${props => props.$hide ? 'none': 'block'}
 `
 
 export default Footer

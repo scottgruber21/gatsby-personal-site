@@ -21,7 +21,7 @@ const IndexPage = () => {
   return (
     <Layout nameRemove="true" hide="true">
    <H1>{headerName.map((x, i) => <span key={i}>{x}</span>)}</H1>
-   <H2><Subhead delay="1.7s">Web Development |</Subhead><Subhead delay="2.2s"> Digital Marketing</Subhead></H2>
+   <H2><Subhead $delay="1.7s">Web Development |</Subhead><Subhead $delay="2.2s"> Digital Marketing</Subhead></H2>
    <MainButton copy="About Me" url="/about" delay='2.5s' />
    </Layout>
   )
@@ -61,7 +61,7 @@ text-align: center;
 `
 
 const Subhead = styled.span`
-animation: ${props => css`${appear} 0.3s linear ${props.delay} forwards`};
+animation: ${props => css`${appear} 0.3s linear ${props.$delay} forwards`};
 opacity: 0;
 `
 

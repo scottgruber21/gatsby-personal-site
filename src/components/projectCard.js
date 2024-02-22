@@ -41,7 +41,7 @@ const ProjectCard = ({info}) => {
 
         return <>
         <CardContainer onClick={() => setOpen(true)}>
-            <GatsbyImage image={thumbImg} />
+            <GatsbyImage image={thumbImg} alt={title} />
             <CardTitle>{title}</CardTitle>
             {subhead && <Subhead><i>{subhead}</i></Subhead>}
         </CardContainer>

@@ -23,15 +23,15 @@ const Resume = () => {
   <Header style={{fontSize: '3.2rem'}}>Scott Gruber</Header>
   <Subhead style={{textAlign: 'center'}}>Web Development/Digital Marketing Professional</Subhead>
   <Header style={{marginTop: '60px'}}>Certified in:</Header>
-  <Certifications>{topBullets.map(x => <Cert>{x}</Cert>)}</Certifications>
+  <Certifications>{topBullets.map((x, i) => <Cert key={i}>{x}</Cert>)}</Certifications>
   <Header style={{marginTop: '60px'}}>Professional Experience</Header>
-  {workExperience.map(x => {
-    return <Experience>
+  {workExperience.map((x, i) => {
+    return <Experience key={i}>
       <Subhead>{x.company}</Subhead>
       <Location>{x.location}</Location>
       <Title>{x.title}</Title>
       <Para>{x.para}</Para>
-      {x.bullets && <BulletsList>{x.bullets.map(y => <Bullet>{y}</Bullet>)}</BulletsList>}
+      {x.bullets && <BulletsList>{x.bullets.map((y, i) => <Bullet key={i}>{y}</Bullet>)}</BulletsList>}
     </Experience>
   })}
   <Header style={{marginTop: '60px'}}>Technical Skills</Header>
@@ -39,20 +39,20 @@ const Resume = () => {
     <div style={{paddingLeft: '20px'}}>
       <Header style={{fontSize: '1.2rem', textAlign: 'left'}}>Software</Header>
       <BulletsList>
-        {techSkills.map(x => <Bullet>{x}</Bullet>)}
+        {techSkills.map((x, i) => <Bullet key={i}>{x}</Bullet>)}
       </BulletsList>
     </div>
 
     <div style={{paddingLeft: '20px'}}>
       <Header style={{fontSize: '1.2rem', textAlign: 'left'}}>Programming Languages and Frameworks</Header>
       <BulletsList>
-        {languages.map(x => <Bullet>{x}</Bullet>)}
+        {languages.map((x, i) => <Bullet key={i}>{x}</Bullet>)}
       </BulletsList>
     </div>
   </TechSkills>
   <Header style={{marginTop: '60px'}}>Professional Certifications</Header>
   <BulletsList>
-        {certs.map(x => <Bullet>{x}</Bullet>)}
+        {certs.map((x, i) => <Bullet key={i}>{x}</Bullet>)}
       </BulletsList>
       <Header style={{marginTop: '60px'}}>Education</Header>
       <Para style={{textAlign: 'center'}}><strong>B.A., Journalism/Political Science</strong></Para>
