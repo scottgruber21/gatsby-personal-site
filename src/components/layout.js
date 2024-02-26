@@ -7,7 +7,7 @@ import { createGlobalStyle } from "styled-components"
 
 const Layout = ({children, nameRemove, hide}) => {
   return (
-    <>
+    <SuperContainer>
     <GlobalStyle />
       <Header nameRemove={nameRemove} />
       <Content>
@@ -15,7 +15,7 @@ const Layout = ({children, nameRemove, hide}) => {
       </Content>
       <Footer hide={hide} />
       <div id="modal-portal"></div>
-    </>
+    </SuperContainer>
   )
 }
 
@@ -24,10 +24,14 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: darkgray no-repeat url('/nyc-dark.jpg/') fixed center;
-  background-position: center 30%;
   color: white;
+  background: no-repeat url('/nyc-dark.jpg') fixed center;
+  background-position: center 30%;
 }
+`
+
+const SuperContainer = styled.div`
+
 `
 
 const Content = styled.div`

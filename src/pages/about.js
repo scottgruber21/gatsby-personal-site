@@ -12,8 +12,8 @@ const About = () => {
     <Layout>
       <Container>
     {/* <HeaderText>Hi, I'm Scott. It's nice to meet you.</HeaderText> */}
-    <HeaderText>{greeting1.map((x, i) => <HeaderWord key={i} $delay={`${i * .15}s`}>{x} </HeaderWord>)}
-    {greeting2.map((x, i) => <HeaderWord key={i} $delay={`${(i * .15) + 1}s`}>{x} </HeaderWord>)}</HeaderText>
+    <HeaderText>{greeting1.map((x, i) => <HeaderWord key={i} $delay={`${i * .15 + .5}s`}>{x} </HeaderWord>)}
+    {greeting2.map((x, i) => <HeaderWord key={i} $delay={`${(i * .15) + 1.3}s`}>{x} </HeaderWord>)}</HeaderText>
 
 
     <Para $delay="2.2s">Greetings! I'm Scott Gruber, a seasoned Web Development and Digital Marketing Professional with a passion for crafting exceptional online experiences. Over the years, I've honed my skills in orchestrating comprehensive digital strategies and leading impactful redesigns. In my role as a Web Development and Marketing Systems Manager at Revenue Cycle Coding Strategies, I oversaw the transformation of three main brand websites, ensuring not only a visually appealing design but also a seamless navigation experience. At Lixil Water Technology Americas, my tenure as a Digital Marketing/E-commerce Specialist was marked by a 67% increase in search engine traffic through strategic SEO enhancements and the successful internalization of GROHE's email functions, enhancing communication efficiency.</Para>
