@@ -14,15 +14,15 @@ const IndexPage = () => {
     for(let i in nameArray){
       setTimeout(() => {
         setHeaderName((headerName) => [...headerName, nameArray[i]])
-      }, i * 100)
+      }, i * 100 + .5)
     }
   }, [])
 
   return (
     <Layout nameRemove="true" hide="true">
    <H1>{headerName.map((x, i) => <span key={i}>{x}</span>)}</H1>
-   <H2><Subhead $delay="1.7s">Web Development |</Subhead><Subhead $delay="2.2s"> Digital Marketing</Subhead></H2>
-   <MainButton copy="About Me" url="/about" delay='2.5s' />
+   <H2><Subhead $delay="2.2s">Web Development |</Subhead><Subhead $delay="2.7s"> Digital Marketing</Subhead></H2>
+   <MainButton copy="About Me" url="/about" delay='3.2s' />
    </Layout>
   )
 }
