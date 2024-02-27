@@ -14,7 +14,7 @@ const IndexPage = () => {
     for(let i in nameArray){
       setTimeout(() => {
         setHeaderName((headerName) => [...headerName, nameArray[i]])
-      }, i * 100 + .5)
+      }, i * 100 + 500)
     }
   }, [])
 
